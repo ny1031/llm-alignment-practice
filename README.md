@@ -35,6 +35,10 @@ bash sft-scripts/run_sft_qwen3_0.6b_base.sh
 | Qwen3-0.6B | MBPP (pass@1) | 20.96 |
 | Qwen3-0.6B | HumanEval (pass@1) | 21.31 |
 | Qwen3-0.6B | GSM8K (em, strict) | 40.86 |
+<<<<<<< HEAD
+=======
+| Qwen3-0.6B | IFEval (strict prompt) | 33.09 |
+>>>>>>> 87ef9bb (nemo eval and trl sft)
 
 ### Nemo-Skills
 TBD
