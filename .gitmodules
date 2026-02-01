@@ -1,0 +1,6 @@
+[submodule "modules/trl"]
+	path = modules/trl
+	url = https://github.com/huggingface/trl.git
+[submodule "modules/Evaluator"]
+	path = modules/Evaluator
+	url = https://github.com/NVIDIA-NeMo/Evaluator.git

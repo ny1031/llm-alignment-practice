@@ -1,0 +1,9 @@
+flask
+structlog
+tensorboardX
+gpustat
+-e ./modules/Evaluator/packages/nemo-evaluator
+nvidia-ifbench
+nvidia-mtbench-evaluator
+nvidia-bigcode-eval
+nvidia-lm-eval
