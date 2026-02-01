@@ -1,6 +1,7 @@
 flask
 structlog
 tensorboardX
+tensorboard
 gpustat
 -e ./modules/Evaluator/packages/nemo-evaluator
 nvidia-ifbench

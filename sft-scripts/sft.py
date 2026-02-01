@@ -2,7 +2,7 @@ import os
 import argparse
 import logging
 import sys
-sys.path.insert(0, "/data/ib-huawei-nas-lmt_980/users/lana/workspace/lmalign-2026/llm-alignment-practice/modules/trl")
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), "../modules/trl"))
 from trl import SFTTrainer, SFTConfig
 from datasets import load_dataset
 
@@ -12,7 +12,7 @@ if __name__ == "__main__":
     parser.add_argument("--model_name", type=str, required=True)
     parser.add_argument("--dataset_name", type=str, required=True)
     parser.add_argument("--split", type=str, default="train")
-    parser.add_argument("--output_dir", type=str, default="/data/ib-huawei-nas-lmt_980/users/lana/workspace/lmalign-2026/llm-alignment-practice/checkpoints/sft")
+    parser.add_argument("--output_dir", type=str, required=True)
     parser.add_argument("--chat_template_path", type=str)
     parser.add_argument("--max_seq_length", type=int, default=4096)
     parser.add_argument("--max_steps", type=int, default=1000)

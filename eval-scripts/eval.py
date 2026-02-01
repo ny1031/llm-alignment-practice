@@ -4,7 +4,7 @@ import logging
 import signal
 import subprocess
 import sys
-sys.path.insert(0, "/data/ib-huawei-nas-lmt_980/users/lana/workspace/lmalign-2026/llm-alignment-practice/modules/Evaluator/packages/nemo-evaluator/src")
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), "../modules/Evaluator/packages/nemo-evaluator/src"))
 
 from nemo_evaluator.api import check_endpoint, evaluate, show_available_tasks
 from nemo_evaluator.api.api_dataclasses import (
@@ -39,7 +39,7 @@ if __name__ == '__main__':
 
     target_config = EvaluationTarget(
         api_endpoint=ApiEndpoint(
-            url=args.completions_url, type=EndpointType.COMPLETIONS, model_id=args.model_name
+            url=args.completions_url, type=endpoint_type, model_id=args.model_name
         )
     )
 
