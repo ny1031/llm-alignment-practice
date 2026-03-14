@@ -1,0 +1,11 @@
+flask
+structlog
+tensorboardX
+tensorboard
+gpustat
+cryptography==42.0.8
+click==8.1.7
+hydra-core==1.3.2
+# antlr4-python3-runtime==4.9.3  # NeMo Skills (hydra-core, omegaconf) 호환
+antlr4-python3-runtime==4.11.1   # MathVerifier LaTeX parsing 필요 (RLVR-Math 학습 시)
+-e ./modules/Skills

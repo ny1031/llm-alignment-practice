@@ -1,0 +1,9 @@
+[submodule "modules/trl"]
+	path = modules/trl
+	url = https://github.com/huggingface/trl.git
+[submodule "modules/Skills"]
+	path = modules/Skills
+	url = https://github.com/NVIDIA-NeMo/Skills.git
+[submodule "modules/open-instruct"]
+	path = modules/open-instruct
+	url = https://github.com/allenai/open-instruct.git
